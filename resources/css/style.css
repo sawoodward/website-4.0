@@ -1,0 +1,304 @@
+/*
+Base color: #FF5442
+/*
+
+/* --------------------------------------------------------------- */
+/* BASIC SETUP */
+/* --------------------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #7f8c8d;
+    font-family: 'Open Sans', 'Arial', serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix:after {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* --------------------------------------------------------------- */
+/* REUSUABLE COMPONENTS */
+/* --------------------------------------------------------------- */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0px;
+}
+
+/* .box {
+    padding: 1%;
+} */
+
+/* -------------------------- TEXT --------------------------- */
+
+h1, h2, h3, h4 {
+    font-family: 'Merriweather', 'Times New Roman', sans-serif;
+    font-weight: 300;
+    color: #FF5442;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 240%;
+}
+
+h2 {
+    font-size: 180%;
+    letter-spacing: 4px;
+}
+
+h3 {
+    font-size: 150%;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 4px;
+}
+
+h4 {
+    font-size: 110%;
+}
+
+.box {
+    font-size: 100%;
+    line-height: 150%;
+    text-align: justify;
+}
+
+/* ---------------------------- LINKS ---------------------------- */
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #FF5442;
+    border-bottom: 1px solid transparent;
+    padding: 2px;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+a:hover, a:active {
+    border-bottom: 1px solid #FF5442;
+}
+
+/* ---------------------------- BUTTONS ---------------------------- */
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.2s, color 0.2s, border 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: #FF5442;
+    color: #fff;
+    border: 1px solid #FF5442;
+    margin-right: 30px;
+}
+
+.btn-ghost:link, .btn-ghost:visited {
+    border: 1px solid #FF5442;
+    color: #FF5442;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover, 
+input[type=submit]:active {
+    background-color: #d14637;
+}
+
+.btn-full:hover,
+.btn-full:active,
+input[type=submit] {
+    border: 1px solid #d14637;
+}
+
+.btn-ghost:hover, .btn-full:active {
+    background-color: #d14637;
+    color: #fff;
+}
+
+/* ---------------------------- ICONS ---------------------------- */
+
+.icon-big {
+    font-size: 200%;
+}
+
+/* --------------------------------------------------------------- */
+/* HEADER */
+/* --------------------------------------------------------------- */
+
+header {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('/resources/img/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.logo {
+    float: left;
+    width: 150px;
+    height: auto;
+    margin-top: 30px;
+}
+
+.main-nav {
+    list-style: none;
+    float: right;
+    margin-top: 45px;
+    font-size: 100%;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text-box h1 {
+    text-transform: none;
+}
+
+.hero-text-box h4 {
+    text-transform: none;
+    margin-top: -30px;
+}
+
+.btn {
+    margin-top: 25px;
+}
+
+/* --------------------------------------------------------------- */
+/* PROJECTS */
+/* --------------------------------------------------------------- */
+
+.section-projects {
+    padding: 0;
+}
+
+.projects-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.projects-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.project-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.project-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scaleY(1.07);
+}
+
+.project-photo img:hover {
+    opacity: 1.0;
+}
+
+/* --------------------------------------------------------------- */
+/* EDUCATION */
+/* --------------------------------------------------------------- */
+
+.section-education {
+    background-image: url('/resources/img/education.jpg');
+    background-attachment: fixed;
+}
+
+/* --------------------------------------------------------------- */
+/* EXPERIENCE */
+/* --------------------------------------------------------------- */
+
+.experience-title {
+    font-weight: bold;
+}
+
+.experience-bullets {
+    margin: 20px 0px 0px 20px;
+}
+
+.experience-bullets li {
+    margin-top: 10px;
+    padding-right: 30px;
+}
+
+/* --------------------------------------------------------------- */
+/* CONTACT */
+/* --------------------------------------------------------------- */
+
+.section-contact {
+    background-color: #eee;
+}
+
+.experience-professional {
+    margin-bottom: 80px;
+}
+
+.contact-form {
+    width: 100%;
+    transform: translate(18%, 0);
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 60%;
+    margin-bottom: 5px;
+    border: 1px solid #7f8c8d;
+    border-radius: 2px;
+    padding: 2px 0px 2px 5px;
+}
+
+textarea { height: 100px; }
+
+*:focus {outline: none;}
+
+/* --------------------------------------------------------------- */
+/* FOOTER */
+/* --------------------------------------------------------------- */
+
+footer {
+    background-color: #333;
+    padding: 20px;
+    font-size: 80%;
+}
