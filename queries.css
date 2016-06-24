@@ -1,0 +1,163 @@
+/* Laptop with HiDPL screen */
+@media only screen and (max-width: 1500px) {
+    header { background-position: 250px 0; }
+}
+
+
+/* iPad in portrait mode from 1024 to 1200 */
+@media only screen and (max-width: 1200px) {
+    .row { padding: 0 4%; }
+    
+    .hero-text-box {
+        width: 100%;
+        padding: 0 4%;
+    }
+}
+
+/* Small tablets to iPad in portrait mode from 768 to 1023 */
+@media only screen and (max-width: 1023px) {
+    html {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    
+    .box-right { margin-left: 40%; }
+    
+    a:hover,
+    a:active {
+        border-bottom: 1px solid transparent;
+    }
+    
+    header {
+        background-position: bottom center;
+        background-attachment: scroll;
+    }
+    
+    .main-nav {
+        margin-top: 35px;
+        font-weight: bold;
+    }
+    
+    .main-nav li { margin-left: 25px; }
+    
+    .hero-text-box {
+        width: 90%;
+        background-color: rgba(255,255,255, 0.85);
+        text-align: center;
+        top: 85%;
+        padding: 20px 0;
+    }
+    
+    .about-resume-links span { margin-top: -35px; }
+    
+    .section-education { background-attachment: scroll; }
+    
+    #education-long { display: none; }
+    #education-short { display: block; }
+    
+    .section-contact { background-attachment: scroll; }
+    
+}
+
+/* Small phones to small tablets from 481 to 767 */
+@media only screen and (max-width: 767px) {
+    html { font-size: 14px; }
+
+    .col {
+        width: 100%;
+        margin: 0 0 2% 0;
+    }
+    
+    .box-right { display: none; }
+    
+    h1, h2, h3, h4 { font-weight: 400; }
+    
+    h1 { font-size: 180%; }
+    h2 { font-size: 150%; }
+    h3:after { margin-top: 20px; }
+    
+    section { padding: 30px 0; }
+    
+    .details-desktop { display: none; }
+    .details-mobile { display: block; }
+    
+    header { background-position: center; }
+    
+    .hero-text-box {
+        width: 90%;
+        background-color: rgba(255,255,255, 0.85);
+        text-align: center;
+        top: 85%;
+        padding: 20px 0;
+    }
+    
+    .main-nav { display: none; }
+    
+    .mobile-nav-icon { display: inline-block; }
+    
+    .main-nav {
+        position: absolute;
+        width: 92%;
+        margin-top: 80px;
+        padding: 10px 0;
+        background-color: rgba(255,255,255, 0.85);
+        text-align: center;
+    }
+    
+    .main-nav li {
+        display: block;
+        margin-left: 0;
+        border-bottom: 1px solid #cbcbcb;
+    }
+    
+    .main-nav li:last-of-type { border-bottom: 1px solid transparent; }
+    
+    .main-nav li a:link, .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+
+    .about-resume-links {
+        float: none;
+        margin-left: -80px;
+        margin-top: 15px;
+    }
+    
+    .about-resume-links li { margin-bottom: 0px; }
+    
+    .about-resume-links span {
+        margin-top: -20px;
+        margin-left: 45px;
+    }
+    
+    #education-short { display: none; }
+    
+    .social-box-right { margin-left: 0; }
+    .social-links { text-align: center; }
+    .social-links li {
+        display: inline-block;
+        margin: 20px 20px 0 0;
+    }
+}
+
+
+/* Small phones from 0 to 480px */
+@media only screen and (max-width: 480px) {
+    html { font-size: 10px; }
+    
+    .logo {
+        height: 30px;
+        width: auto;
+    }
+    
+    .mobile-nav-icon {
+        margin-top: 18px;
+    }
+    
+    .hero-text-box {
+        top: 85%;
+        padding: 10px 5px;
+    }
+}
